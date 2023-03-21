@@ -3,13 +3,11 @@ import AppBar from '@mui/material/AppBar';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import SchedList from './components/SchedList';
 import Semester from './components/Semester';
 import AddStudentForm from './components/AddStudentForm';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 function App() {
   const handleAddStudent = (newStudent) => {
 

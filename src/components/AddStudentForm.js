@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import {toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Cookies from 'js-cookie';
 import AppBar from '@mui/material/AppBar';
@@ -40,8 +40,14 @@ class AddStudentForm extends Component {
     this.setState({ email: event.target.value });
   };
 
- 
-  handleAdd = () => {
+handleAdd = () => {
+  if (!this.state.name.trim() || !this.state.email.trim()) {
+    toast.error("Please fill out all fields", {
+      position: toast.POSITION.BOTTOM_LEFT
+    });
+    return;
+  }
+  
   const newStudent = {
     name: this.state.name,
     email: this.state.email,
