@@ -44,6 +44,23 @@ class Semester extends Component {
        
     return (
        <div>
+		<AppBar position="static" color="default">
+            <Toolbar>
+               <Typography variant="h6" color="inherit">
+                  Add Student
+               </Typography>
+            </Toolbar>
+         </AppBar>
+      
+             
+              <div align="left" >              
+              <Button component={Link} 
+                      to={{pathname:'/add-student'}}
+                variant="outlined" color="primary" style={{margin: 10}}>
+                Add Student
+              </Button>
+		
+      
          <AppBar position="static" color="default">
             <Toolbar>
                <Typography variant="h6" color="inherit">
@@ -51,7 +68,7 @@ class Semester extends Component {
                </Typography>
             </Toolbar>
          </AppBar>
-         <div align="left" >
+         
               <div style={{ height: 400, width: '100%', align:"left"   }}>
                 <DataGrid   rows={SEMESTER_LIST} columns={icolumns} />
               </div>                
