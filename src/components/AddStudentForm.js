@@ -92,9 +92,11 @@ handleAdd = () => {
                </Typography>
             </Toolbar>
          </AppBar>
-        <Button variant="outlined" color="primary" style={{ margin: 10 }} onClick={this.handleClickOpen}>
+        <div align ="left">
+		<Button variant="outlined" color="primary" style={{ margin: 10 }} onClick={this.handleClickOpen}>
           Add Student
         </Button>
+		</div>
         <Dialog open={this.state.open} onClose={this.handleClose}>
           <DialogTitle>Add Student</DialogTitle>
           <DialogContent style={{ paddingTop: 20 }}>
