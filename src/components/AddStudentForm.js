@@ -93,7 +93,7 @@ handleAdd = () => {
             </Toolbar>
          </AppBar>
         <div align ="left">
-		<Button variant="outlined" color="primary" style={{ margin: 10 }} onClick={this.handleClickOpen}>
+		<Button variant="outlined" id="x" color="primary" style={{ margin: 10 }} onClick={this.handleClickOpen}>
           Add Student
         </Button>
 		</div>
